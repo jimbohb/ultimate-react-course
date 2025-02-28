@@ -2105,6 +2105,7 @@ textarea.w-input, textarea.w-select {
   flex-flow: column;
   width: 100%;
   display: flex;
+  overflow: auto;
 }
 
 .chatarea {
