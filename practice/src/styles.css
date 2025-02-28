@@ -2065,6 +2065,7 @@ textarea.w-input, textarea.w-select {
 
 .body {
   justify-content: center;
+  font-family: Roboto, sans-serif;
   display: flex;
 }
 
@@ -2100,8 +2101,10 @@ textarea.w-input, textarea.w-select {
 
 .contactsarea {
   max-width: var(--contactareawidth);
-  background-color: #63bcda;
+  background-color: #fff;
+  flex-flow: column;
   width: 100%;
+  display: flex;
 }
 
 .chatarea {
@@ -2134,4 +2137,75 @@ textarea.w-input, textarea.w-select {
 
 .div-block {
   position: relative;
+}
+
+.chatcard {
+  background-color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.avatar {
+  border: 1px solid #757575;
+  border-radius: 90px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.chatcardtextarea {
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 20px;
+  display: flex;
+}
+
+.chatcardnamereceivedbox {
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.chatcardnametext {
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.chatcardreceived {
+  color: gray;
+  font-size: 18px;
+}
+
+.chatcardmessage {
+  color: gray;
+}
+
+.chatcardmessagebox {
+  justify-content: space-between;
+  display: flex;
+}
+
+.cardmessagenum {
+  color: #fff;
+  background-color: red;
+  border-radius: 19px;
+  padding: 3px 5px;
+}
+
+.chatcardouter {
+  flex-flow: column;
+  display: flex;
+}
+
+.separatorline {
+  border: 1px solid gray;
+  height: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
