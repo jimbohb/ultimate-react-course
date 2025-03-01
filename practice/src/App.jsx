@@ -5,32 +5,10 @@ import ChatContactCard from "./Components/ChatContactCard";
 import "./styles.css";
 
 const data = [
-  { name: "Max Mustermann", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c19f6e9dccac811d77a47f_ksnip_20250228-122547%201.png" },
-  { name: "Balazs Horvath", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c1ca7f31d535460d47b834_ksnip_20250228-122647.png" },
-  { name: "Max Mustermann", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c19f6e9dccac811d77a47f_ksnip_20250228-122547%201.png" },
-  { name: "Balazs Horvath", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c1ca7f31d535460d47b834_ksnip_20250228-122647.png" },
-  { name: "Max Mustermann", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c19f6e9dccac811d77a47f_ksnip_20250228-122547%201.png" },
-  { name: "Balazs Horvath", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c1ca7f31d535460d47b834_ksnip_20250228-122647.png" },
-  { name: "Max Mustermann", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c19f6e9dccac811d77a47f_ksnip_20250228-122547%201.png" },
-  { name: "Balazs Horvath", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c1ca7f31d535460d47b834_ksnip_20250228-122647.png" },
-  { name: "Max Mustermann", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c19f6e9dccac811d77a47f_ksnip_20250228-122547%201.png" },
-  { name: "Balazs Horvath", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c1ca7f31d535460d47b834_ksnip_20250228-122647.png" },
-  { name: "Max Mustermann", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c19f6e9dccac811d77a47f_ksnip_20250228-122547%201.png" },
-  { name: "Balazs Horvath", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c1ca7f31d535460d47b834_ksnip_20250228-122647.png" },
-  { name: "Max Mustermann", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c19f6e9dccac811d77a47f_ksnip_20250228-122547%201.png" },
-  { name: "Balazs Horvath", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c1ca7f31d535460d47b834_ksnip_20250228-122647.png" },
-  { name: "Max Mustermann", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c19f6e9dccac811d77a47f_ksnip_20250228-122547%201.png" },
-  { name: "Balazs Horvath", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c1ca7f31d535460d47b834_ksnip_20250228-122647.png" },
-  { name: "Max Mustermann", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c19f6e9dccac811d77a47f_ksnip_20250228-122547%201.png" },
-  { name: "Balazs Horvath", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c1ca7f31d535460d47b834_ksnip_20250228-122647.png" },
-  { name: "Max Mustermann", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c19f6e9dccac811d77a47f_ksnip_20250228-122547%201.png" },
-  { name: "Balazs Horvath", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c1ca7f31d535460d47b834_ksnip_20250228-122647.png" },
-  { name: "Max Mustermann", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c19f6e9dccac811d77a47f_ksnip_20250228-122547%201.png" },
-  { name: "Balazs Horvath", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c1ca7f31d535460d47b834_ksnip_20250228-122647.png" },
-  { name: "Max Mustermann", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c19f6e9dccac811d77a47f_ksnip_20250228-122547%201.png" },
-  { name: "Balazs Horvath", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c1ca7f31d535460d47b834_ksnip_20250228-122647.png" },
-  { name: "Max Mustermann", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c19f6e9dccac811d77a47f_ksnip_20250228-122547%201.png" },
-  { name: "Balazs Horvath", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"https://cdn.prod.website-files.com/67c02fbdead921f0287e1d79/67c1ca7f31d535460d47b834_ksnip_20250228-122647.png" },
+  { name: "Balazs Horvath", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"http://localhost:8000/01.png" },
+  { name: "Lisa Kudrow", lastmessage: "See you soon!✋", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"http://localhost:8000/02.png" },
+  { name: "John Doe", lastmessage: "Fine, thanx!😍", lastmessagetimestamp: Date.now(), unreadmessages: 5, image:"http://localhost:8000/04.png" },
+  { name: "Melanie Musterfrau", lastmessage: "✋ This section provides detailed reference documentation for working with React. For an introduction to React, please visit the Learn section.", lastmessagetimestamp: Date.now() - 60 * 1000 * 70, unreadmessages: 0,image:"http://localhost:8000/03.png" },
 ];
 
 export default function App() {

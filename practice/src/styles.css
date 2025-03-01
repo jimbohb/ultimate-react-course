@@ -2058,7 +2058,7 @@ textarea.w-input, textarea.w-select {
   --backgrouncolormain: silver;
   --footerheight: 30px;
   --iconareawidth: 80px;
-  --contactareawidth: 350px;
+  --contactareawidth: 400px;
   --detailsareawidth: 350px;
   --chatareawidth: 80px;
 }
@@ -2142,9 +2142,14 @@ textarea.w-input, textarea.w-select {
 
 .chatcard {
   background-color: #fff;
+  border-radius: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
   display: flex;
+}
+
+.chatcard:hover {
+  background-color: #cfcece;
 }
 
 .avatar {
@@ -2201,6 +2206,8 @@ textarea.w-input, textarea.w-select {
 
 .chatcardouter {
   flex-flow: column;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
 }
 

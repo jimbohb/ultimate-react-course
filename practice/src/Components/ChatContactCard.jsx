@@ -1,6 +1,6 @@
 const zeropad = (num, width) => num.toString().padStart(width, "0");
 
-export default function ChatContactCard({ name, timestamp, unreadmessages, lastmessage, image }) {
+export default function ChatContactCard({ name, timestamp, unreadmessages, lastmessage, image, maxmessagelength=20}) {
     const date = new Date(timestamp);
     return (<>
         <div className="chatcardouter">
@@ -13,7 +13,7 @@ export default function ChatContactCard({ name, timestamp, unreadmessages, lastm
                         <div className="chatcardreceived">{`${zeropad(date.getHours(),2)}:${zeropad(date.getMinutes(),2)}`}</div>
                     </div>
                     <div className="chatcardmessagebox">
-                        <div className="chatcardmessage">{lastmessage}</div>
+                        <div className="chatcardmessage">{lastmessage.substring(0,maxmessagelength) + (lastmessage.length > maxmessagelength ? "..." : "") }</div>
                         { unreadmessages > 0 && <div className="cardmessagenum">{unreadmessages} new</div>}
                     </div>
                 </div>
