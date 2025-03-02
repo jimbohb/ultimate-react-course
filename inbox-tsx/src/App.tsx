@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useState } from "react";
 import ContactsArea from "./ContactsArea/Index";
 import ChatContactCard from "./Components/ChatContactCard";
