@@ -1,7 +1,5 @@
 import { PropsWithChildren } from "react";
 
-interface ChatAreaProps extends PropsWithChildren {}
-
-export default function ChatArea({ children }: ChatAreaProps) {
+export default function ChatArea({ children }: PropsWithChildren) {
   return <div className="chatarea">{children}</div>;
 }
