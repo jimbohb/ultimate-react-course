@@ -1,4 +1,4 @@
-import Box from "@mui/material/Box";
+import "./styles.css";
 import ChatMainFrame from "./ChatMainFrame";
 
 export default function App() {

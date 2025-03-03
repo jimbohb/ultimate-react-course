@@ -1,17 +1,17 @@
+import { PropsWithChildren } from "react";
 import Box from "@mui/material/Box";
-import Footer from "./Layout/Footer";
 
-export default function ChatMainFrame() {
+export default function ChatMainArea({ children }: PropsWithChildren) {
   return (
     <Box
       sx={{
         display: "flex",
         minHeight: "100vh",
         minWidth: "100vw",
-        backgroundColor: "var(--backgrouncolormain)",
+        backgroundColor: "blue",
       }}
     >
-      <Footer />
+      {/* Your content here */}
     </Box>
   );
 }

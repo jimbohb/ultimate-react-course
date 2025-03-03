@@ -1,0 +1,15 @@
+:root {
+    --backgrouncolormain: silver;
+    --footerheight: 30px;
+    --iconareawidth: 80px;
+    --contactareawidth: 400px;
+    --detailsareawidth: 350px;
+    --chatareawidth: 80px;
+  }
+
+  .footer {
+    width: 100%;
+    height: var(--footerheight);
+    background-color: yellow;
+  }
+  
