@@ -1,11 +1,14 @@
-import Box from "@mui/material/Box";
 import Footer from "./Layout/Footer";
 import MainChatArea from "./Layout/MainChatArea";
+import { ThemeProvider } from "@emotion/react";
+import bonomitheme from "./theme";
 
 export default function ChatMainFrame() {
   return (
     <>
-      <MainChatArea />
+      <ThemeProvider theme={bonomitheme}>
+        <MainChatArea />
+      </ThemeProvider>
       <Footer />
     </>
   );

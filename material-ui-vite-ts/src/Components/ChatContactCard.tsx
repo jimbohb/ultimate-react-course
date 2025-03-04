@@ -27,8 +27,8 @@ export default function ChatContactCard({
   return (
     <>
       <Box className="chatcardouter">
-        <Card>
-          <CardContent sx={{backgroundColor:"aqua"}}>
+        <Card variant="neu">
+          <CardContent>
             <Avatar sx={{height:"75px",width:"75px"}}>
               <img
                 src={image_url}
