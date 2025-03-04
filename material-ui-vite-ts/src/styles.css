@@ -1,15 +1,86 @@
-:root {
-    --backgrouncolormain: silver;
-    --footerheight: 30px;
-    --iconareawidth: 80px;
-    --contactareawidth: 400px;
-    --detailsareawidth: 350px;
-    --chatareawidth: 80px;
-  }
+* {
+    box-sizing: border-box;
+}
 
-  .footer {
-    width: 100%;
-    height: var(--footerheight);
-    background-color: yellow;
-  }
-  
+html {
+    height:100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+:root {
+  --backgrouncolormain: silver;
+  --footerheight: 30px;
+  --iconareawidth: 80px;
+  --contactareawidth: 400px;
+  --detailsareawidth: 350px;
+  --chatareawidth: 80px;
+  /* min-width: 100vw;
+  min-height: 100vh;*/
+  background-color: aqua;
+}
+
+.chatmainframe {
+  display: flex;
+  /*width: 1920px;
+  max-height: 1800px;*/
+  width: 800px;
+  max-height: 250px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: var(--backgrouncolormain);
+}
+
+.mainchatarea {
+  display: flex;
+  height: 100%;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: black;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: black;
+}
+
+.footer {
+  width: 100%;
+  height: var(--footerheight);
+  background-color: yellow;
+}
+.iconarea {
+  min-width: var(--iconareawidth);
+  background-color: hsla(0, 85.32%, 72.75%, 1);
+}
+.contactsarea {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  max-width: var(--contactareawidth);
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: white;
+}
+.chatarea {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: hsla(118, 63.94%, 68.57%, 1);
+}
+.detailsarea {
+  width: 100%;
+  max-width: var(--detailsareawidth);
+  background-color: hsla(61, 67%, 51.52%, 1);
+}
