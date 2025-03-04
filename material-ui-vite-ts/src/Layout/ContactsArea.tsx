@@ -1,6 +1,7 @@
 import { PropsWithChildren, useState } from "react";
 import Box from "@mui/material/Box";
 import ChatContactCard from "../Components/ChatContactCard";
+import ChatContactCardOld from "../Components/ChatContactCardOld";
 
 const data = [
   {
@@ -34,21 +35,30 @@ const data = [
   },
 ];
 
-
 export default function ContactsArea({ children }: PropsWithChildren) {
   const [chats, setChats] = useState(data);
   return (
     <Box className="contactsarea">
       {chats.map((item, index) => {
         return (
-          <ChatContactCard
-            key={index}
-            name={item.name}
-            timestamp={item.lastmessagetimestamp}
-            unreadmessages={item.unreadmessages}
-            lastmessage={item.lastmessage}
-            image_url={item.image}
-          />
+          <>
+            <ChatContactCardOld
+              key={index}
+              name={item.name}
+              timestamp={item.lastmessagetimestamp}
+              unreadmessages={item.unreadmessages}
+              lastmessage={item.lastmessage}
+              image_url={item.image}
+            />
+            <ChatContactCard
+              key={index}
+              name={item.name}
+              timestamp={item.lastmessagetimestamp}
+              unreadmessages={item.unreadmessages}
+              lastmessage={item.lastmessage}
+              image_url={item.image}
+            />
+          </>
         );
       })}
     </Box>
