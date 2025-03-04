@@ -14,23 +14,21 @@ body {
     justify-content: center;
 }
 :root {
+  --application-width: 1920px;
+  --application-height: 1800px;
   --backgrouncolormain: silver;
   --footerheight: 30px;
   --iconareawidth: 80px;
   --contactareawidth: 400px;
   --detailsareawidth: 350px;
   --chatareawidth: 80px;
-  /* min-width: 100vw;
-  min-height: 100vh;*/
-  background-color: aqua;
+  /* background-color: aqua;*/
 }
 
 .chatmainframe {
   display: flex;
-  /*width: 1920px;
-  max-height: 1800px;*/
-  width: 800px;
-  max-height: 250px;
+  width: var(--application-width);
+  max-height: var(--application-height);
   flex-direction: column;
   flex-wrap: nowrap;
   background-color: var(--backgrouncolormain);
