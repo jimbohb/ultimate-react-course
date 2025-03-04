@@ -1,3 +1,5 @@
+import Box from "@mui/material/Box";
+
 const zeropad = (num: number, width: number) =>
   num.toString().padStart(width, "0");
 
@@ -21,8 +23,8 @@ export default function ChatContactCard({
   const date = new Date(timestamp);
   return (
     <>
-      <div className="chatcardouter">
-        <div className="chatcard">
+      <Box className="chatcardouter">
+        <Box className="chatcard">
           <img
             src={  image_url}
             loading="lazy"
@@ -31,27 +33,27 @@ export default function ChatContactCard({
             alt=""
             className="avatar"
           />
-          <div className="chatcardtextarea">
-            <div className="chatcardnamereceivedbox">
-              <div className="chatcardnametext">{name}</div>
-              <div className="chatcardreceived">{`${zeropad(
+          <Box className="chatcardtextarea">
+            <Box className="chatcardnamereceivedbox">
+              <Box className="chatcardnametext">{name}</Box>
+              <Box className="chatcardreceived">{`${zeropad(
                 date.getHours(),
                 2
-              )}:${zeropad(date.getMinutes(), 2)}`}</div>
-            </div>
-            <div className="chatcardmessagebox">
-              <div className="chatcardmessage">
+              )}:${zeropad(date.getMinutes(), 2)}`}</Box>
+            </Box>
+            <Box className="chatcardmessagebox">
+              <Box className="chatcardmessage">
                 {lastmessage.substring(0, maxmessagelength) +
                   (lastmessage.length > maxmessagelength ? "..." : "")}
-              </div>
+              </Box>
               {unreadmessages > 0 && (
-                <div className="cardmessagenum">{unreadmessages} new</div>
+                <Box className="cardmessagenum">{unreadmessages} new</Box>
               )}
-            </div>
-          </div>
-        </div>
-        <div className="separatorline"></div>
-      </div>
+            </Box>
+          </Box>
+        </Box>
+        <Box className="separatorline"></Box>
+      </Box>
     </>
   );
 }
